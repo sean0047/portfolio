@@ -43,10 +43,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffd700; /* Gold */
+    color: #ffd700;
 }
 
-/* Sections */
 section {
     padding: 40px 20px;
     margin-bottom: 20px;
@@ -64,7 +63,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Hero Section */
 #hero {
     text-align: center;
     background-color: #007bff;
