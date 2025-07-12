@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +18,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#links">Links</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -23,41 +26,32 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <img src="images/Profile.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="Images/engineer.gif" alt="Engineer"></a>
                 <h1>Hello</h1>
             </div>
         </section>
 
         <section id="about">
             <h2>About</h2>
-            <p>Software Engineer with several years of experience with a <b>Bachelor of Computer Science in Software Engineering</b> and an <b>Associate of Science</b>.</p>
-            <p>Husband of 6 years. Owner of 4 cats. Future father. Looking forward to the next step in my journey.</p>
-            <p>I hold an active Secret Security Clearance. I excel in full-stack development, optimizing code for performance, and ensuring high-quality standards through thorough peer reviews and effective debugging. I'm adept at collaborating within Agile environments, mentoring junior developers, and continuously exploring emerging technologies to enhance development workflows. My background includes a strong foundation in web and mobile API development.</p>
+            <p>Full-Stack Software Engineer with several years of experience with a <b>Bachelor of Computer Science in Software Engineering</b> and an <b>Associate of Science</b>.</p>
+            <p>Husband of 6 years. Owner of 4 cats. Future father. Looking for the next step in my journey.</p>
             <div style="text-align: center;">
-            <img src="Images/catwalk.gif" alt="Cat Walk" style="width: 50%; height: auto;"></a>
+            <img src="Images/catwalk.gif" alt="Cat Walk" style="width: 25%; height: auto;"></a>
+            </div>
+            <div style="text-align: center;">
+            <a href="Resume/Sean Adams Resume 2025.pdf" download="Sean_Adams_Resume.pdf" class="download-button">Download My Resume</a>
+            </div>
+            <div style="text-align: center;">
+            <p>Feel free to contact me for all future inquiries!</p>
             </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
             <div class="skills-grid">
-                <div class="skill-item">C++</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">Git/GitHub</div>
-                <div class="skill-item">AWS</div>
-                <div class="skill-item">MySQL</div>
-                <div class="skill-item">HTML/CSS</div>
-                <div class="skill-item">JavaScript</div>
-            </div>
-        </section>
-
-        <section id="links">
-            <h2>Links</h2>
-            <div class="social-links">
-                <div class="skills-grid">
-                <div class="skill-item"><a href="https://www.linkedin.com/in/sean-adams-060814251/" target="_blank">LinkedIn</a></div>
-                <div class="skill-item"><a href="https://github.com/sean0047" target="_blank">GitHub</a></div>
-                <div class="skill-item"><a href="mailto:sean0047.dummy@example.com">Email</a></div>
+                <div class="skill-item"><a href="https://www.linkedin.com/in/sean-adams-060814251/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+                <div class="skill-item"><a href="https://github.com/sean0047" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                <div class="skill-item"><a href="mailto:sean0047.dummy@example.com" target="_blank" rel="noopener noreferrer">Email</a></div>
             </div>
         </section>
 
@@ -65,30 +59,20 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <a href="https://github.com/YourUsername/Project1-Repo">
-                    <img src="Images/TELMI Logo.png" alt="TELMI Logo"></a>
+                    <a href="https://github.com/sean0047/telmi" target="_blank" rel="noopener noreferrer">
+                    <img src="Images/TELMI Logo.png" alt="TELMI Logo" title="Click for GitHub Repository"></a>
                     <p>A mobile application designed to provide an up-to-date inventory of the contents of one's refrigerator</p> 
                     <p>No more guessing what you have or making unnecessary grocery trips</p> 
                     <p>TELMI helps reduce food waste and save money by keeping track of what's in your fridge, right from your phone</p>
                 </div>
                 <div class="project-card">
-                    <a href="https://github.com/sean0047/tabletop">
-                    <img src="Images/TABLETOP Logo.png" alt="TABLETOP Logo"></a>
+                    <a href="https://github.com/sean0047/tabletop" target="_blank" rel="noopener noreferrer">
+                    <img src="Images/TABLETOP Logo.png" alt="TABLETOP Logo" title="Click for GitHub Repository"></a>
                     <p>A web/mobile application designed to streamline the restaurant reservation process</p> 
                     <p>Users can easily browse available restaurants and secure bookings with just a few taps</p> 
                     <p>A key feature is the integrated chat functionality, allowing users to communicate directly with the restaurant</p>
                 </div>
                 </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
         </section>
     </main>
 

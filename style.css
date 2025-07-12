@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 section {
-    padding: 40px 20px;
+    padding: 20px;
     margin-bottom: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -60,12 +60,12 @@ section {
 h2 {
     text-align: center;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #hero {
     text-align: center;
-    background-color: #007bff;
+    background-color: #003140;
     color: #fff;
     padding: 30px 20px;
     border-radius: 0;
@@ -120,12 +120,16 @@ h2 {
 }
 
 .skill-item {
-    background-color: #e9ecef;
+    background-color: #003140;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    color: #555;
+    color: #fff;
     text-align: center;
+}
+
+.skill-item:hover {
+    background-color: #007bff;
 }
 
 .project-grid {
@@ -158,28 +162,6 @@ h2 {
     color: #666;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    gap: 15px;
-}
-
-#contact input,
-#contact textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
 .social-links {
     text-align: center;
     margin-top: 30px;
@@ -203,6 +185,34 @@ footer {
     background-color: #333;
     color: #fff;
     font-size: 0.9em;
+}
+
+.download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #003140;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for visited links */
+a:visited {
+    color: #fff;
 }
 
 @media (max-width: 768px) {
