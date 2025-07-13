@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Update the current year in the footer
     const currentYearSpan = document.getElementById('currentYear');

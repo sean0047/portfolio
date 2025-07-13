@@ -11,23 +11,44 @@
     <title>Sean Adams - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://img.icons8.com/?size=100&id=20324&format=png&color=ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    </div>
+
+    <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <section id="hero">
             <div class="hero-content">
                 <img src="Images/engineer.gif" alt="Engineer"></a>
-                <h1>Hello</h1>
+                <h1>Hello, I'm Sean</h1>
+                <button id="theme-switch" onclick="toggleImage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </button>
             </div>
         </section>
 
@@ -43,15 +64,10 @@
             </div>
             <div style="text-align: center;">
             <p>Feel free to contact me for all future inquiries!</p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item"><a href="https://www.linkedin.com/in/sean-adams-060814251/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-                <div class="skill-item"><a href="https://github.com/sean0047" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                <div class="skill-item"><a href="mailto:sean0047.dummy@example.com" target="_blank" rel="noopener noreferrer">Email</a></div>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/32d22n110d93/tucson/?unit=us" data-label_1="TUCSON" data-label_2="WEATHER" data-theme="pure" >TUCSON WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
             </div>
         </section>
 
@@ -60,26 +76,59 @@
             <div class="project-grid">
                 <div class="project-card">
                     <a href="https://github.com/sean0047/telmi" target="_blank" rel="noopener noreferrer">
-                    <img src="Images/TELMI Logo.png" alt="TELMI Logo" title="Click for GitHub Repository"></a>
+                    <img id="telmi" src="Images/TELMI Logo.png" alt="TELMI Logo" title="Click for GitHub Repository"></a>
+                    
                     <p>A mobile application designed to provide an up-to-date inventory of the contents of one's refrigerator</p> 
                     <p>No more guessing what you have or making unnecessary grocery trips</p> 
                     <p>TELMI helps reduce food waste and save money by keeping track of what's in your fridge, right from your phone</p>
                 </div>
                 <div class="project-card">
                     <a href="https://github.com/sean0047/tabletop" target="_blank" rel="noopener noreferrer">
-                    <img src="Images/TABLETOP Logo.png" alt="TABLETOP Logo" title="Click for GitHub Repository"></a>
+                    <img id="tabletop" src="Images/TABLETOP Logo.png" alt="TABLETOP Logo" title="Click for GitHub Repository"></a>
                     <p>A web/mobile application designed to streamline the restaurant reservation process</p> 
                     <p>Users can easily browse available restaurants and secure bookings with just a few taps</p> 
                     <p>A key feature is the integrated chat functionality, allowing users to communicate directly with the restaurant</p>
                 </div>
                 </div>
+
+                <script>
+                    const ORIGINAL_TELMI = 'Images/TELMI Logo.png';
+                    const NEW_TELMI = 'Images/TELMI Logo - Dark.png';
+                    const ORIGINAL_TABLETOP = 'Images/TABLETOP Logo.png';
+                    const NEW_TABLETOP = 'Images/TABLETOP Logo - Dark.png';
+                    const myImage = document.getElementById('telmi');
+                    const myImage2 = document.getElementById('tabletop');
+
+                    let isOriginalImage = true;
+
+                    function toggleImage() {
+                        if (isOriginalImage) {
+                            myImage.src = ORIGINAL_TELMI;
+                            myImage2.src = ORIGINAL_TABLETOP;
+                            isOriginalImage = false;
+                        } else {
+                            myImage.src = NEW_TELMI;
+                            myImage2.src = NEW_TABLETOP;
+                            isOriginalImage = true;
+                            myImage2.style.width = '465px';
+                            image.style.height = '100px';
+                        }
+                    }
+                </script>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="skills-grid">
+                <a href="mailto:sean0047.dummy@example.com" class="fa fa-google" target="_blank" title="Google"></a>
+                <a href="https://www.linkedin.com/in/sean-adams-060814251/" class="fa fa-linkedin" target="_blank" title="LinkedIn"></a>
+                <a href="https://github.com/sean0047" class="fa fa-github" target="_blank" title="GitHub"></a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Sean Adams. All rights reserved.</p>
+        <p2>&copy; <span id="currentYear"></span>Sean Adams. All rights reserved.</p2>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
