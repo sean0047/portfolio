@@ -26,6 +26,10 @@ h2 {
     margin-bottom: 15px;
 }
 
+section{
+  background-color: var(--base-color);
+}
+
 #hero {
     text-align: center;
     background-color: #003140;
@@ -121,8 +125,8 @@ h2 {
 }
 
 .project-card p {
-    padding: 0 15px;
-    font-size: 0.9em;
+
+    font-size: 1.0em;
     color: #666;
 }
 
@@ -152,17 +156,17 @@ footer {
 }
 
 .download-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #fff;
-            background-color: #003140;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #003140;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
@@ -206,10 +210,6 @@ body{
   padding: 0;
   line-height: 1.6;
   color: #333;
-}
-
-section{
-  background-color: var(--base-color);
 }
 
 p{
@@ -343,4 +343,61 @@ button{
 .fa-github {
   background: #000;
   color: white;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: 155px;
+    text-align: center;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
 }

@@ -57,13 +57,16 @@
             <p>Full-Stack Software Engineer with several years of experience with a <b>Bachelor of Computer Science in Software Engineering</b> and an <b>Associate of Science</b>.</p>
             <p>Husband of 6 years. Owner of 4 cats. Future father. Looking for the next step in my journey.</p>
             <div style="text-align: center;">
-            <img src="Images/catwalk.gif" alt="Cat Walk" style="width: 25%; height: auto;"></a>
-            </div>
-            <div style="text-align: center;">
             <a href="Resume/Sean Adams Resume 2025.pdf" download="Sean_Adams_Resume.pdf" class="download-button">Download My Resume</a>
             </div>
+            <br>
+            <div class="skills-grid">
+                <a href="mailto:sean0047.dummy@example.com" class="fa fa-google" target="_blank" title="Google"></a>
+                <a href="https://www.linkedin.com/in/sean-adams-060814251/" class="fa fa-linkedin" target="_blank" title="LinkedIn"></a>
+                <a href="https://github.com/sean0047" class="fa fa-github" target="_blank" title="GitHub"></a>
+            </div>
+            <br>
             <div style="text-align: center;">
-            <p>Feel free to contact me for all future inquiries!</p>
             <a class="weatherwidget-io" href="https://forecast7.com/en/32d22n110d93/tucson/?unit=us" data-label_1="TUCSON" data-label_2="WEATHER" data-theme="pure" >TUCSON WEATHER</a>
             <script>
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
@@ -78,16 +81,19 @@
                     <a href="https://github.com/sean0047/telmi" target="_blank" rel="noopener noreferrer">
                     <img id="telmi" src="Images/TELMI Logo.png" alt="TELMI Logo" title="Click for GitHub Repository"></a>
                     
-                    <p>A mobile application designed to provide an up-to-date inventory of the contents of one's refrigerator</p> 
-                    <p>No more guessing what you have or making unnecessary grocery trips</p> 
+                    <p><b>Mobile application</b> designed to provide an up-to-date inventory of the contents of one's refrigerator</p> 
+                    <p>No more guessing inventory status or making unnecessary grocery trips</p> 
                     <p>TELMI helps reduce food waste and save money by keeping track of what's in your fridge, right from your phone</p>
+                    <a href="https://github.com/sean0047/telmi" class="download-button" target="_blank" rel="noopener noreferrer">Click for Repository</a>
                 </div>
                 <div class="project-card">
                     <a href="https://github.com/sean0047/tabletop" target="_blank" rel="noopener noreferrer">
                     <img id="tabletop" src="Images/TABLETOP Logo.png" alt="TABLETOP Logo" title="Click for GitHub Repository"></a>
-                    <p>A web/mobile application designed to streamline the restaurant reservation process</p> 
-                    <p>Users can easily browse available restaurants and secure bookings with just a few taps</p> 
-                    <p>A key feature is the integrated chat functionality, allowing users to communicate directly with the restaurant</p>
+                        <p><b>Web/Mobile application</b> designed to streamline the restaurant reservation process</p> 
+                        <p>Users can easily browse available restaurants and secure bookings with just a few taps</p> 
+                        <p>A key feature is the integrated chat functionality, allowing users to communicate directly with the restaurant</p>
+                        <br>
+                        <a href="https://github.com/sean0047/tabletop" class="download-button" target="_blank" rel="noopener noreferrer">Click for Repository</a>
                 </div>
                 </div>
 
@@ -119,10 +125,48 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <div class="skills-grid">
-                <a href="mailto:sean0047.dummy@example.com" class="fa fa-google" target="_blank" title="Google"></a>
-                <a href="https://www.linkedin.com/in/sean-adams-060814251/" class="fa fa-linkedin" target="_blank" title="LinkedIn"></a>
-                <a href="https://github.com/sean0047" class="fa fa-github" target="_blank" title="GitHub"></a>
+            <div style="text-align: center;">
+            <p>I'm open and excited to discuss new projects, collaborations, and opportunities</p>
+            <p>Feel free to contact me for all future inquiries!</p>
+            </div>
+
+            <div class="contact-form-container" style="text-align: center;">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" 
+                            name="name" 
+                            placeholder="Your Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" 
+                            name="email" 
+                            placeholder="Your Email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" 
+                            name="phone" 
+                            placeholder="Your Phone Number" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" 
+                                name="message" 
+                                placeholder="Your Message" 
+                                rows="5" required></textarea>
+                        <span class="error-message" 
+                            id="messageError"></span>
+                    </div>
+                    <button type="submit" 
+                            class="download-button">
+                    Send Message
+                    </button>
+                </form>
             </div>
         </section>
     </main>
